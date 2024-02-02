@@ -2,7 +2,7 @@
 
 /*Returns a random vector within a radius of 1.
 For a better distribution of samples make this a unit vector.*/
-t_vec	rand_in_unit_sphere(int seed)
+t_vec	random_vector_in_unit_sphere(int seed)
 {
 	t_vec	rand_vec;
 
