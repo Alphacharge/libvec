@@ -14,6 +14,7 @@
 # define LIBVEC_H
 
 # include <stdio.h>
+# include <stdbool.h>
 # include <math.h>
 
 typedef struct s_vector
@@ -40,9 +41,13 @@ t_vec	random_vector_in_hemisphere(int seed, t_vec normal);
 
 t_vec	new_vector(double x, double y, double z);
 t_vec	invert_vector(t_vec vec);
+t_vec	abs_vector(t_vec color);
+
 double	length_vector(t_vec v1);
 double	length_squared(t_vec vector);
 void	print_vector(t_vec vector);
+
+bool	are_equal_vectors(t_vec a, t_vec b);
 
 int		lcg_random(unsigned int seed);
 int		xorshift_random(int seed);

@@ -6,6 +6,8 @@ CFLAGS	:=	-Wall -Wextra -Werror
 
 ###			###			SOURCES			###			###
 SRC		:=	ft_add_vectors.c
+SRC		+=	ft_abs_vector.c
+SRC		+=	ft_are_equal_vectors.c
 SRC		+=	ft_subtract_vectors.c
 SRC		+=	ft_multiply_vectors.c
 SRC		+=	ft_multiply_vector_by_scalar.c
